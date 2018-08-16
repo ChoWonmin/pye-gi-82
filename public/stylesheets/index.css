@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+.flex-wrapper {
+  display: flex; }
+  .flex-wrapper .col-12 {
+    flex: 12;
+    padding: 4px; }
+  .flex-wrapper .col-10 {
+    flex: 10;
+    padding: 4px; }
+  .flex-wrapper .col-8 {
+    flex: 8;
+    padding: 4px; }
+  .flex-wrapper .col-6 {
+    flex: 6;
+    padding: 4px; }
+  .flex-wrapper .col-4 {
+    flex: 4;
+    padding: 4px; }
+  .flex-wrapper .col-3 {
+    flex: 3;
+    padding: 4px; }
+  .flex-wrapper .col-2 {
+    flex: 2;
+    padding: 4px; }
+  .flex-wrapper .col-1 {
+    flex: 1;
+    padding: 4px; }
+
+.hot-deal-wrap, .store-wrap {
+  height: 134px;
+  margin-top: 2px;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 4px; }
+  .hot-deal-wrap .title, .store-wrap .title {
+    font-weight: bold;
+    text-indent: 12px; }
+  .hot-deal-wrap .item-list, .store-wrap .item-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 12px; }
+    .hot-deal-wrap .item-list::-webkit-scrollbar, .store-wrap .item-list::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; }
+    .hot-deal-wrap .item-list .item, .store-wrap .item-list .item {
+      flex: 0 0 auto;
+      width: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .hot-deal-wrap .item-list .item img, .store-wrap .item-list .item img {
+        border-radius: 100%;
+        border: solid 1px #F39C12;
+        width: 48px;
+        height: 48px; }
+        .hot-deal-wrap .item-list .item img:hover, .store-wrap .item-list .item img:hover {
+          background-color: #f7ba5b;
+          cursor: pointer; }
+        .hot-deal-wrap .item-list .item img:active, .store-wrap .item-list .item img:active {
+          background-color: #c87f0a; }
+    .hot-deal-wrap .item-list .item-name, .store-wrap .item-list .item-name {
+      margin-top: 8px;
+      font-size: 12px;
+      color: #704f2a; }
+
+.map-wrap#map {
+  width: 100%;
+  height: calc(667px - 58px - 134px);
+  -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.12); }
+
+.store-wrap {
+  width: 320px; }
+
+#map div[style] {
+  border-radius: 4px;
+  border: none !important;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.24);
+  -moz-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.24);
+  box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.24); }
+
+/*# sourceMappingURL=index.css.map */

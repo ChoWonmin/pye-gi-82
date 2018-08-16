@@ -1,0 +1,88 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='/stylesheets/viewProduct.css')
+    .header.flex-wrapper
+        a(href='/')
+            i.material-icons#regProduct arrow_back_ios
+        .col-12
+        .title Store Detail
+        .col-12
+        i.material-icons.tmp#searchProduct search
+    .content
+        .product-card
+            .product-img
+                img(src="/images/salad.jpg")
+            .product-info-wrapper
+                .line.flex-wrapper
+                    .product-name Avocado Salad
+                    .col-12
+                    .product-price 1500
+                .line
+                    .product-info 샐러드는 잘 안 팔리네요. 조금 할인 많이해서 팝니다. 아보카도도 있어요^^
+                .bottom-info
+                    .line.flex-wrapper
+                        .col-4.name 유통기한
+                        .col-8.value 08.24 02:00
+                    .line.flex-wrapper
+                        .col-4.name 원가
+                        .col-8.value 5000
+
+        .product-card
+            .product-img
+                img(src="/images/sandwich.jpg")
+            .product-info-wrapper
+                .line.flex-wrapper
+                    .product-name Sausage Sandwich
+                    .col-12
+                    .product-price 1200
+                .line
+                    .product-info 맛있는 소세지 샌드위치입니다. 토마토도 많이 들어있습니다. 유통기한 2시간 남아서 팝니다.
+                .bottom-info
+                    .line.flex-wrapper
+                        .col-4.name 유통기한
+                        .col-8.value 08.24 02:15
+                    .line.flex-wrapper
+                        .col-4.name 원가
+                        .col-8.value 2400
+
+        .product-card
+            .product-img
+                img(src="/images/kebab.jpg")
+            .product-info-wrapper
+                .line.flex-wrapper
+                    .product-name Sausage Kebab
+                    .col-12
+                    .product-price 1800
+                .line
+                    .product-info 터키식 케밥입니다. 소세지가 듬뿍 들어있어요. 항상 잘 팔렸는데 오늘은 가져가실 분!!!
+                .bottom-info
+                    .line.flex-wrapper
+                        .col-4.name 유통기한
+                        .col-8.value 08.24 02:15
+                    .line.flex-wrapper
+                        .col-4.name 원가
+                        .col-8.value 3000
+
+        .product-card
+            .product-img
+                img(src="/images/kimbab.jpg")
+            .product-info-wrapper
+                .line.flex-wrapper
+                    .product-name Korean Kimbab
+                    .col-12
+                    .product-price 1000
+                .line
+                    .product-info 거제도에서 나온 김으로 민든 김밥입니다. 배고프신 분들 가져가세요. 가성비 최고입니다.
+                .bottom-info
+                    .line.flex-wrapper
+                        .col-4.name 유통기한
+                        .col-8.value 08.24 01:15
+                    .line.flex-wrapper
+                        .col-4.name 원가
+                        .col-8.value 2200
+
+
+
+
+

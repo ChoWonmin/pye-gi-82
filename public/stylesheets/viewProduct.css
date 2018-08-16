@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+.flex-wrapper {
+  display: flex; }
+  .flex-wrapper .col-12 {
+    flex: 12;
+    padding: 4px; }
+  .flex-wrapper .col-10 {
+    flex: 10;
+    padding: 4px; }
+  .flex-wrapper .col-8 {
+    flex: 8;
+    padding: 4px; }
+  .flex-wrapper .col-6 {
+    flex: 6;
+    padding: 4px; }
+  .flex-wrapper .col-4 {
+    flex: 4;
+    padding: 4px; }
+  .flex-wrapper .col-3 {
+    flex: 3;
+    padding: 4px; }
+  .flex-wrapper .col-2 {
+    flex: 2;
+    padding: 4px; }
+  .flex-wrapper .col-1 {
+    flex: 1;
+    padding: 4px; }
+
+.product-card {
+  width: calc(375px - 40px);
+  background-color: #fff;
+  margin: 32px auto;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.24);
+  -moz-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.24);
+  box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.24); }
+  .product-card .product-info-wrapper {
+    padding: 4px 20px 8px 20px; }
+    .product-card .product-info-wrapper .product-name {
+      height: 48px;
+      line-height: 48px;
+      font-weight: bold; }
+    .product-card .product-info-wrapper .product-price {
+      height: 48px;
+      line-height: 48px;
+      color: #F39C12;
+      margin-right: 12px; }
+    .product-card .product-info-wrapper .product-info {
+      padding: 0 0 8px 0;
+      font-size: 14px;
+      -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.04);
+      -moz-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.04);
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.04); }
+    .product-card .product-info-wrapper .bottom-info {
+      margin-top: 12px;
+      font-size: 14px; }
+      .product-card .product-info-wrapper .bottom-info .line {
+        height: 32px;
+        line-height: 32px;
+        -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.02);
+        -moz-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.02);
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02); }
+
+.product-img {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.12); }
+  .product-img img {
+    width: 100%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px; }
+
+/*# sourceMappingURL=viewProduct.css.map */

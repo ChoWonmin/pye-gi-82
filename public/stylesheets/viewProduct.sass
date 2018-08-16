@@ -1,0 +1,46 @@
+@import "global"
+
+$card-width: calc(#{$width} - 40px)
+
+.product-card
+  width: $card-width
+  background-color: $white-color
+  margin: 32px auto
+  border-radius: 4px
+  @include card-box-shadow(.24)
+  .product-info-wrapper
+    padding: 4px 20px 8px 20px
+    .product-name
+      height: 48px
+      line-height: 48px
+      @include bold()
+    .product-price
+      height: 48px
+      line-height: 48px
+      color: $main-color
+      margin-right: 12px
+    .product-info
+      padding: 0 0 8px 0
+      font-size: 14px
+      @include bottom-shadow(.04)
+    .bottom-info
+      margin-top: 12px
+      font-size: 14px
+      .line
+        height: 32px
+        line-height: 32px
+        @include bottom-shadow(.02)
+        .name
+        .value
+
+.product-img
+  border-top-right-radius: 4px
+  border-top-left-radius: 4px
+  width: 100%
+  @include align-center()
+  @include bottom-shadow(.12)
+  img
+    width: 100%
+    border-top-right-radius: 4px
+    border-top-left-radius: 4px
+

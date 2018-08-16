@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+.flex-wrapper {
+  display: flex; }
+  .flex-wrapper .col-12 {
+    flex: 12;
+    padding: 4px; }
+  .flex-wrapper .col-10 {
+    flex: 10;
+    padding: 4px; }
+  .flex-wrapper .col-8 {
+    flex: 8;
+    padding: 4px; }
+  .flex-wrapper .col-6 {
+    flex: 6;
+    padding: 4px; }
+  .flex-wrapper .col-4 {
+    flex: 4;
+    padding: 4px; }
+  .flex-wrapper .col-3 {
+    flex: 3;
+    padding: 4px; }
+  .flex-wrapper .col-2 {
+    flex: 2;
+    padding: 4px; }
+  .flex-wrapper .col-1 {
+    flex: 1;
+    padding: 4px; }
+
+.photo-wrap {
+  width: 100%;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .photo-wrap img {
+    width: 300px; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(667px - 520px);
+  background-color: #414e5e; }
+  .footer .box {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer .box i {
+      font-size: 48px; }
+    .footer .box .btn {
+      width: 64px;
+      height: 64px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: solid 2px #fff;
+      position: relative;
+      transition: all .3s ease; }
+      .footer .box .btn::after {
+        position: absolute;
+        content: '';
+        background-color: #fff;
+        width: 54px;
+        height: 54px;
+        border-radius: 100%;
+        transition: all .3s ease; }
+      .footer .box .btn:active::after {
+        width: 48px;
+        height: 48px; }
+
+/*# sourceMappingURL=camera.css.map */

@@ -1,0 +1,51 @@
+@import "global"
+@import "./lib/dropdown"
+
+$component-width: #{$width} - 40px
+
+.content
+  padding: 12px 20px
+
+.photo-up
+  background-image: url("/images/food/salad.svg")
+
+.card
+  @include card-box-shadow(.24)
+  border-radius: 4px
+  @include align-center
+  position: relative
+  width: $component-width
+  height: 300px
+  background-color: #fff
+  color: $main-color
+  transition: all .3s ease
+  &:hover
+    @include card-box-shadow(.60)
+    cursor: pointer
+  .btn-wrap
+    right: 12px
+    bottom: 12px
+    position: absolute
+    .btn
+      background-color: $main-color
+      border-radius: 100%
+      width: 40px
+      height: 40px
+      text-align: center
+      line-height: 40px
+      color: $white-color
+      margin: 0 8px
+      @include button-action($main-color)
+
+
+.footer
+  width: $component-width
+  padding: 8px
+  .line
+    margin: 8px 0px
+    .align-bottom
+      display: flex
+      align-items: flex-end
+
+
+

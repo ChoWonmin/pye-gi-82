@@ -1,0 +1,62 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='/stylesheets/regProduct.css')
+    .header.flex-wrapper
+        a(href='/')
+            i.material-icons#regProduct arrow_back_ios
+        .col-12
+        .title Post Product
+        .col-12
+        i.material-icons.tmp#searchProduct search
+    .content
+        .card
+            img(src='/images/food/salad.svg')
+            .btn-wrap.flex-wrapper
+                a(href='/camera')
+                    i.material-icons.btn camera_alt
+                i.material-icons.btn collections
+        .footer
+            .line.flex-wrapper
+                .col-8
+                    .inputWithIcon
+                        input(placeholder='상품명')
+                        i.material-icons.none-visible arrow_back_ios
+                .col-1
+                .col-2.align-bottom
+                    .dropdown
+                        .dropdown-btn
+                            i.material-icons.dropdown-icon category
+                            i.material-icons.dropdown-arrow keyboard_arrow_down
+                        .dropdown-content
+                            .option
+                                .name 과일
+                            .option
+                                .name 유제품
+                            .option
+                                .name 도시락
+                            .option
+                                .name 삼각김밥
+                            .option.bottom-shadow
+                                .name 기타
+            .line.flex-wrapper
+                .col-4
+                    .inputWithIcon
+                        input(placeholder='판매가')
+                        i.material-icons attach_money
+                .col-1
+                .col-4
+                    .inputWithIcon
+                        input(placeholder='원가')
+                        i.material-icons attach_money
+            .line.flex-wrapper
+                .col-8
+                    .inputWithIcon
+                        input(placeholder='유통기한')
+                        i.material-icons date_range
+                .col-4
+            .line.flex-wrapper
+                .col-12
+                    textarea(placeholder='상세 정보')
+
+

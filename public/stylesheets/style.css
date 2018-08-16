@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+.flex-wrapper {
+  display: flex; }
+  .flex-wrapper .col-12 {
+    flex: 12;
+    padding: 4px; }
+  .flex-wrapper .col-10 {
+    flex: 10;
+    padding: 4px; }
+  .flex-wrapper .col-8 {
+    flex: 8;
+    padding: 4px; }
+  .flex-wrapper .col-6 {
+    flex: 6;
+    padding: 4px; }
+  .flex-wrapper .col-4 {
+    flex: 4;
+    padding: 4px; }
+  .flex-wrapper .col-3 {
+    flex: 3;
+    padding: 4px; }
+  .flex-wrapper .col-2 {
+    flex: 2;
+    padding: 4px; }
+  .flex-wrapper .col-1 {
+    flex: 1;
+    padding: 4px; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  color: #F39C12;
+  text-decoration: none !important; }
+
+body {
+  padding: 50px;
+  font: 18px 'Roboto', Helvetica, Arial, sans-serif;
+  color: #704f2a;
+  background-color: #cccccc; }
+
+.content {
+  height: calc(667px - 58px);
+  overflow-y: scroll; }
+
+.container {
+  width: 375px;
+  height: 667px;
+  margin: auto;
+  background-color: #fff2ef; }
+  .container .header {
+    color: #F39C12;
+    height: 58px;
+    background-color: #fff;
+    z-index: 100;
+    -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center; }
+    .container .header #logo {
+      width: 100px; }
+    .container .header i {
+      margin: 0 24px 0 24px; }
+      .container .header i:hover {
+        color: #f7ba5b;
+        cursor: pointer; }
+      .container .header i:active {
+        color: #c87f0a; }
+
+.test {
+  border: solid 1px black; }
+
+.inputWithIcon {
+  position: relative;
+  height: 36px; }
+  .inputWithIcon input {
+    color: #F39C12;
+    background-color: transparent;
+    padding-left: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 36px;
+    border-radius: 4px;
+    box-shadow: 0 2px 0 rgba(243, 153, 18, 0.24); }
+    .inputWithIcon input::placeholder {
+      color: #F39C12; }
+  .inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    padding: 6px 8px;
+    color: #F39C12;
+    font-size: 18px; }
+
+textarea {
+  width: 100%;
+  height: 72px;
+  border: none;
+  background-color: transparent;
+  color: #F39C12;
+  padding: 8px;
+  outline: none;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.12);
+  -moz-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.12);
+  box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.12);
+  box-shadow: 2px 2px 4px 2px rgba(243, 153, 18, 0.24); }
+  textarea::placeholder {
+    color: #F39C12; }
+
+.none-visible {
+  visibility: hidden; }
+
+/*# sourceMappingURL=style.css.map */

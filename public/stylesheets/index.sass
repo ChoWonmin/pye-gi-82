@@ -1,0 +1,52 @@
+@import "global"
+
+$hot-deal-height: 134px
+
+.hot-deal-wrap, .store-wrap
+  height: $hot-deal-height
+  margin-top: 2px
+  background-color: $white-color
+  padding: 12px
+  border-radius: 4px
+  .title
+    @include bold
+    text-indent: 12px
+  .item-list
+    display: flex
+    flex-wrap: nowrap
+    overflow-x: auto
+    margin-top: 12px
+    &::-webkit-scrollbar
+      width: 0px
+      background: transparent
+
+    .item
+      flex: 0 0 auto
+      width: 64px
+      @include align-vertical-center
+      img
+        border-radius: 100%
+        border: solid 1px $main-color
+        width: 48px
+        height: 48px
+        @include button-action($main-color)
+    .item-name
+      margin-top: 8px
+      font-size: 12px
+      color: $font-color
+.map-wrap#map
+  width: 100%
+  height: calc(#{$height} - #{$header-height} - #{$hot-deal-height})
+  @include bottom-shadow(.12)
+
+.store-wrap
+  width: 320px
+
+#map
+  div[style]
+    border-radius: 4px
+    border: none !important
+    @include card-box-shadow(.24)
+
+
+

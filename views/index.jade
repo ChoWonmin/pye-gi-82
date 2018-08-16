@@ -1,0 +1,45 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='/stylesheets/index.css')
+  script(type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5a4c16a7b43f685b596650c9462ead0d")
+  .header.flex-wrapper
+    a(href='/regProduct')
+      i.material-icons#back-btn add
+    .col-12
+    .logo
+        img(src="/images/logo_text.png")#logo
+    .col-12
+    i.material-icons#searchProduct search
+  .hot-deal-wrap
+    .title Hot Deal
+    .item-list
+      .item
+        a(href='/viewProduct')
+          img(src="/images/food/sandwich.svg").hot-deal-img
+        .item-name 샌드위치
+      .item
+        a(href='/viewProduct')
+          img(src="/images/food/milk(3).svg").hot-deal-img
+        .item-name 서울우유
+      .item
+        a(href='/viewProduct')
+          img(src="/images/food/lunch.svg").hot-deal-img
+        .item-name 애플도시락
+      .item
+        a(href='/viewProduct')
+          img(src="/images/food/milk(1).svg").hot-deal-img
+        .item-name 흰우유
+      .item
+        a(href='/viewProduct')
+          img(src="/images/food/sandwich(1).svg").hot-deal-img
+        .item-name 애플빵
+      .item
+        a(href='/viewProduct')
+          img(src="/images/food/sandwich(2).svg").hot-deal-img
+        .item-name 햄버거
+  .map-wrap#map
+  script(type="text/javascript" src="/map.js")
+
+
+

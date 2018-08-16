@@ -1,0 +1,80 @@
+@import "global"
+
+*
+  box-sizing: border-box
+
+a
+  color: $main-color
+  text-decoration: none !important
+
+body
+  padding: 50px
+  font: 18px 'Roboto', Helvetica, Arial, sans-serif
+  color: $font-color
+  background-color: #cccccc
+
+.content
+  height: calc(#{$height} - #{$header-height})
+  overflow-y: scroll
+
+.container
+  width: $width
+  height: $height
+  margin: auto
+  background-color: $background-color
+  .header
+    color: $main-color
+    height: $header-height
+    background-color: $white-color
+    z-index: 100
+    @include bottom-shadow(.12)
+    display: flex
+    align-items: center
+    #logo
+      width: 100px
+    i
+      margin: 0 24px 0 24px
+      @include hover-name-action($main-color)
+
+.test
+  border: solid 1px black
+
+.inputWithIcon
+  position: relative
+  height: 36px
+  input
+    color: $main-color
+    background-color: transparent
+    padding-left: 40px
+    width: 100%
+    outline: none
+    border: none
+    height: 36px
+    border-radius: 4px
+    box-shadow: 0 2px 0 rgba(243,153,18,0.24)
+    &::placeholder
+      color: $main-color
+  i
+    position: absolute
+    left: 0
+    top: 4px
+    padding: 6px 8px
+    color: $main-color
+    font-size: 18px
+
+textarea
+  width: 100%
+  height: 72px
+  border: none
+  background-color: transparent
+  color: $main-color
+  padding: 8px
+  outline: none
+  @include card-box-shadow(.12)
+  box-shadow: 2px 2px 4px 2px rgba(243,153,18,0.24)
+  &::placeholder
+    color: $main-color
+
+
+.none-visible
+  visibility: hidden
