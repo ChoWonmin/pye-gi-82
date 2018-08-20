@@ -22,4 +22,8 @@ router.get('/camera', function(req, res, next) {
     res.render('camera');
 });
 
+router.get('/search', function(req, res, next) {
+    res.render('search');
+});
+
 module.exports = router;

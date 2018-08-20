@@ -14,17 +14,17 @@
   .dropdown-btn
     display: flex
     height: 32px
-    background-color: $main-color
-    color: #fff
+    background: transparent
+    color: $main-color
     border-radius: 3px
-    @include button-action($main-color)
+    box-shadow: 2px 2px 4px 2px rgba(243,153,18,0.24)
     .name
-      width: 92px
+      width: 54px
       text-align: center
       line-height: 32px
+      font-size: 12px
     .dropdown-icon, .dropdown-arrow
       line-height: 32px
-      color: #fff
       margin: 0 8px
     .dropdown-arrow
       transition: all 0.3s ease-in-out
@@ -34,7 +34,7 @@
     width: 100%
     display: none
     position: absolute
-    background-color: #ffffff
+    background-color: $background-color
     top: 40px
     transition: all .3s ease
     @include shadow(.12)
@@ -44,7 +44,8 @@
       height: 32px
       line-height: 32px
       .name
-        text-align: center
+        text-indent: 8px
+        font-size: 14px
       &:hover
         background-color: darken(#fff, 20)
       .option-icon

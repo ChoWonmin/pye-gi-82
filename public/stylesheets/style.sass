@@ -17,11 +17,53 @@ body
   height: calc(#{$height} - #{$header-height})
   overflow-y: scroll
 
+.phone
+  padding: 0 12px 0 12px
+  width: $width + 24px
+  height: $height + 156px
+  margin: auto
+  background-color: #f7f7f7
+  border-radius: 36px
+  //border: solid .6px #ffec00
+  @include card-box-shadow(.36)
+  .phone-header
+    width: 100%
+    height: 60px
+    background-color: transparent
+    position: relative
+    .cam
+      position: absolute
+      top: calc(50% - 5px)
+      left: calc(35% - 4px)
+      width: 10px
+      height: 10px
+      border-radius: 100%
+      background-color: #050505
+    .speaker
+      position: absolute
+      width: 60px
+      height: 4px
+      background-color: #050505
+      top: calc(50% - 2px)
+      left: calc(50% - 30px)
+      border-radius: 12px
+  .phone-footer
+    width: 100%
+    height: 108px
+    background-color: transparent
+    @include align-center
+    .phone-btn
+      border-radius: 100%
+      border: solid 1px #cdad00
+      width: 52px
+      height: 52px
+      @include shadow(.12)
+
 .container
   width: $width
   height: $height
-  margin: auto
   background-color: $background-color
+  @include card-box-shadow(.12)
   .header
     color: $main-color
     height: $header-height
@@ -39,42 +81,17 @@ body
 .test
   border: solid 1px black
 
-.inputWithIcon
-  position: relative
-  height: 36px
-  input
-    color: $main-color
-    background-color: transparent
-    padding-left: 40px
-    width: 100%
-    outline: none
-    border: none
-    height: 36px
-    border-radius: 4px
-    box-shadow: 0 2px 0 rgba(243,153,18,0.24)
-    &::placeholder
-      color: $main-color
-  i
-    position: absolute
-    left: 0
-    top: 4px
-    padding: 6px 8px
-    color: $main-color
-    font-size: 18px
-
-textarea
-  width: 100%
-  height: 72px
-  border: none
-  background-color: transparent
-  color: $main-color
-  padding: 8px
-  outline: none
-  @include card-box-shadow(.12)
-  box-shadow: 2px 2px 4px 2px rgba(243,153,18,0.24)
-  &::placeholder
-    color: $main-color
-
-
 .none-visible
   visibility: hidden
+
+.product-img
+  border-top-right-radius: 4px
+  border-top-left-radius: 4px
+  width: 100%
+  @include align-center()
+  @include bottom-shadow(.12)
+  img
+    width: 100%
+    border-top-right-radius: 4px
+    border-top-left-radius: 4px
+

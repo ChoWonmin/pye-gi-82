@@ -1,7 +1,7 @@
 @import "global"
-@import "./lib/dropdown"
-
-$component-width: #{$width} - 40px
+@import "lib/dropdown"
+@import "lib/input"
+@import "lib/card"
 
 .content
   padding: 12px 20px
@@ -10,18 +10,6 @@ $component-width: #{$width} - 40px
   background-image: url("/images/food/salad.svg")
 
 .card
-  @include card-box-shadow(.24)
-  border-radius: 4px
-  @include align-center
-  position: relative
-  width: $component-width
-  height: 300px
-  background-color: #fff
-  color: $main-color
-  transition: all .3s ease
-  &:hover
-    @include card-box-shadow(.60)
-    cursor: pointer
   .btn-wrap
     right: 12px
     bottom: 12px
@@ -37,7 +25,6 @@ $component-width: #{$width} - 40px
       margin: 0 8px
       @include button-action($main-color)
 
-
 .footer
   width: $component-width
   padding: 8px
@@ -46,6 +33,10 @@ $component-width: #{$width} - 40px
     .align-bottom
       display: flex
       align-items: flex-end
+
+.regProduct-btn
+  font-size: 14px
+  @include button(100%, 48px)
 
 
 

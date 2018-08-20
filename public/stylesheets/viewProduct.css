@@ -61,19 +61,4 @@
         -moz-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.02);
         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02); }
 
-.product-img {
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.12); }
-  .product-img img {
-    width: 100%;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px; }
-
 /*# sourceMappingURL=viewProduct.css.map */

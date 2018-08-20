@@ -21,8 +21,12 @@ var positions = [
         latlng: new daum.maps.LatLng(37.275079, 127.047940)
     },
     {
-        title: '세븐일레븐 아주대',
+        title: '세븐일레븐 우만주공',
         latlng: new daum.maps.LatLng(37.274393, 127.046738)
+    },
+    {
+        title: '세븐일레븐 매탄점',
+        latlng: new daum.maps.LatLng(37.273393, 127.046820)
     }
 ];
 
@@ -32,14 +36,6 @@ var imageSrc = "http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerSt
 var iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
 
 for (var i = 0; i < positions.length; i ++) {
-
-    if(i==3) {
-        console.log('hello')
-
-        setTimeout(() => {
-            console.log('asdasd')
-        }, 6000);
-    }
 
     // 마커 이미지의 이미지 크기 입니다
     var imageSize = new daum.maps.Size(24, 35);
@@ -100,6 +96,8 @@ for (var i = 0; i < positions.length; i ++) {
             infowindow.open(map, marker);
         });
     })(marker, infowindow);
+
+    const storeList = document.getElementsByClassName('store-wrap');
+
+    console.log(storeList);
 }
-
-

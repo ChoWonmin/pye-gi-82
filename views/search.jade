@@ -1,0 +1,118 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='/stylesheets/search.css')
+    .header.flex-wrapper
+        .col-2
+            a(href='/')
+                i.material-icons#regProduct arrow_back_ios
+        .col-8
+            input(placeholder='검색')
+        .col-2
+    .content
+        .sort-wrap.flex-wrapper
+            .col-2
+            .col-4
+                .dropdown
+                    .dropdown-btn
+                        i.material-icons.dropdown-icon compass_calibration
+                        .name 거리순
+                        .material-icons.dropdown-arrow keyboard_arrow_down
+                    .dropdown-content
+                        .option
+                            .name 100m
+                        .option
+                            .name 300m
+                        .option
+                            .name 500m
+                        .option
+                            .name 1km
+            .col-4
+                .dropdown
+                    .dropdown-btn
+                        i.material-icons.dropdown-icon category
+                        .name 분류
+                        i.material-icons.dropdown-arrow keyboard_arrow_down
+                    .dropdown-content
+                        .option
+                            .name 과일
+                        .option
+                            .name 유제품
+                        .option
+                            .name 도시락
+                        .option
+                            .name 삼각김밥
+                        .option
+                           .name 기타
+            .col-2
+        .product-list
+            .product-wrap
+                .product-img
+                    img(src="/images/kebab.jpg")
+                .product-info.flex-wrapper
+                    .product-name Sausage Kebab
+                    .col-4
+                    .product-price 1800
+            .product-wrap
+                .product-img
+                    img(src="/images/fried.jpg")
+                .product-info.flex-wrapper
+                    .product-name 돈가스
+                    .col-4
+                    .product-price 1800
+            .product-wrap
+                .product-img
+                    img(src="/images/kebab2.jpg")
+                .product-info.flex-wrapper
+                    .product-name Sausage Kebab
+                    .col-4
+                    .product-price 1800
+            .product-wrap
+                .product-img
+                    img(src="/images/kebab3.jpg")
+                .product-info.flex-wrapper
+                    .product-name Sausage Kebab
+                    .col-4
+                    .product-price 1800
+            .product-wrap
+                .product-img
+                    img(src="/images/pigFoot.jpg")
+                .product-info.flex-wrapper
+                    .product-name 족발
+                    .col-4
+                    .product-price 1800
+            .product-wrap
+                .product-img
+                    img(src="/images/rice.jpg")
+                .product-info.flex-wrapper
+                    .product-name 주먹밥
+                    .col-4
+                    .product-price 1800
+            .product-wrap
+                .product-img
+                    img(src="/images/salad.jpg")
+                .product-info.flex-wrapper
+                    .product-name Sausage Salad
+                    .col-4
+                    .product-price 1800
+            .product-wrap
+                .product-img
+                    img(src="/images/kebab4.jpg")
+                .product-info.flex-wrapper
+                    .product-name Sausage Kebab
+                    .col-4
+                    .product-price 1800
+            .product-wrap
+                .product-img
+                    img(src="/images/salad2.jpg")
+                .product-info.flex-wrapper
+                    .product-name Tomato Salad
+                    .col-4
+                    .product-price 1000
+            .product-wrap
+                .product-img
+                    img(src="/images/salad3.jpg")
+                .product-info.flex-wrapper
+                    .product-name Tomate Salad
+                    .col-4
+                    .product-price 900

@@ -9,6 +9,7 @@ $background-color: #fff2ef
 $width: 375px
 $height: 667px
 $header-height: 58px
+$component-width: #{$width} - 40px
 
 @mixin shadow($opa)
   -webkit-box-shadow: 0 1px 8px 0 rgba(0,0,0,$opa), 0 3px 4px 0 rgba(0,0,0,$opa), 0 3px 3px -2px rgba(0,0,0,$opa)
@@ -43,13 +44,13 @@ $header-height: 58px
 @mixin button($width, $height)
   width: $width
   height: $height
-  border: solid .5px $sub-color
+  box-shadow: 2px 2px 4px 2px rgba(243,153,18,0.24)
   text-align: center
   line-height: $height
   border-radius: 3px
-  color: $sub-color
+  color: $main-color
   &:hover
-    background-color: lighten($sub-color,15)
+    background-color: lighten($main-color,15)
     color: #fff
     cursor: pointer
 

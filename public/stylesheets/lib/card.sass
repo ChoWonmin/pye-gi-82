@@ -1,0 +1,18 @@
+@import "../global"
+
+@mixin card($w, $h)
+  @include card-box-shadow(.24)
+  border-radius: 4px
+  @include align-center
+  position: relative
+  width: $w
+  height: $h
+  background-color: #fff
+  color: $main-color
+  transition: all .3s ease
+  &:hover
+    @include card-box-shadow(.60)
+    cursor: pointer
+
+.card
+  @include card($component-width, 300px)
